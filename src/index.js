@@ -1,6 +1,6 @@
 module.exports = function toReadable (number) {
-    var str = "";
-var numbers = {0: "zero",
+    let str = "";
+    const numbers = {0: "zero",
            1: "one",
            2: "two",
            3: "three",
@@ -30,8 +30,8 @@ var numbers = {0: "zero",
            90: "ninety",
            100: "hundred"
           }
-        var numStr = number.toString();
-        var strSplit = numStr.split("");
+        let numStr = number.toString();
+        let strSplit = numStr.split("");
           
 if(number <= 20) {
 str = numbers[number];
